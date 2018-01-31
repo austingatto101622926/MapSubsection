@@ -15,7 +15,10 @@ namespace MapSubsection_Library
         {
             SideLength = sideLength;
             ShipCoord = shipCoords;
-
+        }
+        public Map()
+        {
+            SideLength = 0;
         }
     }
 }

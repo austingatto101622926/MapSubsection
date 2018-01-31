@@ -16,14 +16,18 @@ using System.Windows.Shapes;
 namespace MapSubsection_WPF
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for PageTwo.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class PageTwo : Page
     {
-
-        public MainWindow()
+        public PageTwo()
         {
             InitializeComponent();
+        }
+
+        private void Forward_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.GoBack();
         }
     }
 }

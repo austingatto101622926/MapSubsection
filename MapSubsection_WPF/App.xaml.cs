@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using MapSubsection_Library;
 
 namespace MapSubsection_WPF
 {
@@ -13,5 +14,6 @@ namespace MapSubsection_WPF
     /// </summary>
     public partial class App : Application
     {
+        public Map map;
     }
 }

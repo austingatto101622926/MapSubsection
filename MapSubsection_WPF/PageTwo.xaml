@@ -1,0 +1,16 @@
+﻿<Page x:Class="MapSubsection_WPF.PageTwo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MapSubsection_WPF"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="PageTwo">
+
+    <Grid>
+        <TextBlock>Hello from Page 2!</TextBlock>
+
+        <Button Name="Forward" Height="50" Width="200" Click="Forward_Click">Go to Page 1!</Button>        
+    </Grid>
+</Page>

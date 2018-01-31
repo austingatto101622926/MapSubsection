@@ -12,18 +12,26 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using MapSubsection_Library;
 
 namespace MapSubsection_WPF
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for NewPage.xaml
     /// </summary>
-    public partial class MainWindow : NavigationWindow
+    public partial class NewPage : Page
     {
-
-        public MainWindow()
+        public NewPage()
         {
             InitializeComponent();
+        }
+
+        private void Submit_Click(object sender, RoutedEventArgs e)
+        {
+            App current = App.Current as App;
+
+            current.map = new Map(int.Parse(MapSize.Text), );
+            this.NavigationService.Navigate(new Uri("PageTwo.xaml", UriKind.Relative));
         }
     }
 }
